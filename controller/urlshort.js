@@ -63,7 +63,7 @@ deleteurl=async(req,res)=>{
         if(url){
      await Urlshort.findByIdAndDelete(req.params.id);   
  res.status(200).send(`sucessfully deleted url${req.params.id}`)
-     }
+     } 
     else{
         res.status(200).send(`no url in that id ${req.params.id}`)
     }}

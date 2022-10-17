@@ -40,7 +40,7 @@ const forgethome=async(req,res)=>{res.render("home")}
     id:user.id 
   } 
   const token = jwt.sign(payload,secure,{expiresIn:'5m'});
-  const link=`https://startling-bavarois-af96a1.netlify.app/${user._id}/${token}`
+  const link=`https://startling-bavarois-af96a1.netlify.app/reset-pass/${user._id}/${token}`
     console.log(link)
 
     const email=user.email 
